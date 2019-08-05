@@ -1,0 +1,39 @@
+{
+    "name": "ubrize/sales-lv",
+    "description": "SMS sales.lv channel for Laravel 5.3+",
+    "keywords": ["laravel", "notifications", "saleslv", "sales-lv"],
+    "homepage": "https://github.com/ubrize/sales-lv",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Uldis Brize",
+            "role": "Developer",
+            "email": "ubrize@me.com",
+            "homepage": "https://github.com/ubrize"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.4",
+        "ext-mbstring": "*",
+        "ext-json": "*",
+        "guzzlehttp/guzzle": "^6.2",
+        "illuminate/queue": "5.1 - 5.8",
+        "illuminate/notifications": "5.1 - 5.8",
+        "illuminate/support": "5.1 - 5.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ubrize\\SalesLv\\": "src"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ubrize\\SalesLv\\SalesLvServiceProvider"
+            ]
+        }
+    }
+}
